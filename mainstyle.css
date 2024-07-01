@@ -1,0 +1,159 @@
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+  body {
+    font-family: "Roboto Slab", sans-serif;
+  }
+
+
+  body {
+    height: 100vh;
+    margin-top:10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.7rem;
+    color: rgb(177, 172, 172);
+    text-align: justify;
+  }
+
+  .bg{
+      transition:  .5s;
+      background: rgb(147, 147, 147);
+      color: rgb(35, 35, 35);
+  }
+  .black{
+      transition:  .5s;
+      background: rgb(31, 31, 31);
+      color:white
+  }
+  .dwqe{
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 36px;
+    margin-right: 5%;
+    cursor:pointer;
+  }
+
+  .txt_img{
+    margin-right: 20%;
+  }
+
+  .portrait img{
+    display:block;
+    float: right;
+    width: 16%;
+    background:#047ab1;
+    padding: 2px;
+  }
+
+  .assamese_name{
+    font-size: 35px ;
+    margin-bottom:10px;
+    margin-left: 2%;
+  }
+
+  .assamese_name:hover{
+    color:#047ab1;
+    cursor: pointer;
+  }
+
+  .tcenter {
+    text-align: center;
+    font-size:60px;
+  }
+
+  .link{
+    font-style: bold;
+    color: rgb(150, 5, 5);
+    text-decoration: none;
+    transition: .2s;
+  }
+
+  .link:hover{
+    color: #ffffff;
+    background-color: rgb(150, 5, 5);
+    text-decoration: none;
+    transition: .2s;
+  }
+
+  .para{
+    font-size:20px;
+    padding:20px;
+  }
+
+
+  .switch{
+    position:relative;
+    margin-top: 15px;
+    float: right;
+  }
+
+  @media only screen and (max-width: 750px) {
+
+    body {
+      position: relative;
+      height: 100vh;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top:10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-size: 1.5rem;
+      color: rgb(22, 22, 22);
+      text-align: justify;
+    }
+
+    .txt_img{
+      margin-top:50%;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+
+    
+    .portrait img{
+      align-items: center;
+      margin-left: 30%;
+      margin-right: 30%;
+      width: 40%;
+      padding: 1px;
+    }
+
+    .tcenter {
+      text-align: center;
+      font-size:25px;
+    }
+
+    .para{
+      font-size:15px;
+      padding:20px;
+    }
+
+    .nav_button{
+      font-size:30px;
+    }
+
+    .assamese_name{
+      font-size: 30px ;
+    }
+
+    .dark_sw{
+      position: relative;
+      align-items: center;
+    }
+
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    .switch{
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 44%;
+      margin-right: auto;
+    }
+    
+  }
+

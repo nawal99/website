@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(24,24,24, .5);
+  backdrop-filter: blur(7px);
+  --webkit-backdrop-filter: blur(7px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 
+}
+
+.nav_button{
+  font-size:35px;
+  cursor:pointer;
+  padding: 0px 2px 0px 2px;
+  background-color: rgba(70, 70, 70, 0.106);
+  border-radius: 3px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav img {
+  display: block;
+  width:5rem;
+	margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+
+
+.sidenav li {
+	margin: 15px 8% 0 8%;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+  transition: .5s;
+}
+
+.sidenav li span {
+	font-size: 30px;
+  padding: 10px 5px 10px 10%;
+  color: inherit;
+}
+
+.sidenav li a {
+    padding: 10px 10px 10px 5%;
+    color: inherit;
+    display: block;
+    white-space: wrap;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+
+.sidenav li:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.185);
+    transition: .2s;
+    >a{
+      transition: .4s;
+      font-size: 22px;
+    }
+    >span{
+      transition: .4s;
+      opacity: 10%;
+    }
+}
+
+.sidenav a:hover {
+  color: #00a2ff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: inherit;
+}
+
+.sidenav .darkMode {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav_button:hover{
+  color:rgb(71, 70, 70);
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_button{
+    font-size:30px;
+  }
+  .sidenav li{
+    margin: 15px 12% 0 12%;
+    border-radius: 8px;
+  }
+  .sidenav li span {
+    font-size: 25px;
+    padding: 4px 10px 4px 10px;
+  }
+  .sidenav li a{
+    font-size: 20px;
+    padding: 4px 5px 4px 5px;
+  }
+  .sidenav li:hover {
+    border-radius: 10px;
+  }
+}
