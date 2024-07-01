@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<style>
+    #main{
+        transition: margin-left .5s;
+        transition: margin-right .5s;
+        padding: 16px;
+        }
+    #moi_image{
+        transition:  .1s;
+        }
+    #mySidenav{
+        transition:  .5s;
+    }
+    #top{
+        transition:  .5s;
+    }
+    #ltsw{
+        transition: .1s;
+    }
+    #drksw{
+        transition: .1s;
+    }
+    #bdy
+        {
+        transition:  .5s;    
+        }
+    
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40
+    }
+</style>
+
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name = "description" content = "Homepage of NKH">
+    <link
+            rel="icon"
+            href="Photos/NKH ill.jpg"
+            type="image/x-icon"
+        />
+    <title>Hazarika's Homepage</title>
+    <link rel="stylesheet" href="CSS/sidenav.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mainstyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<script src="script.js"></script>
+
+<body id="bdy" class="black" style="margin-left: 5%; margin-right: 5%;">
+
+    
+	<div id="mySidenav" class="sidenav">
+        
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <img src="Photos/nkh_logo.png" alt="NKH">
+
+        <li>
+            <span href="education.html" class="material-symbols-outlined">book</span>
+            <a href="education.html">Education</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">calculate</span>
+        	<a href="#">Research</a>
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">book</span>
+        	<a href="#">Notes</a>
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">shuffle</span>
+	        <a href="#">Miscellenous</a></li>
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="contact.html">Contact</a> 
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">person</span>
+            <a href="Pdf/CV.pdf">CV</a> 
+        </li>
+	</div>
+
+    
+    <div id="top" style="margin-left: 10px;display:block;">
+        
+        <span id="button" class="nav_button" onclick="openNav()">&#9776;</span>
+        <span class="assamese_name" > নৱল কিশোৰ হাজৰিকা</span>
+
+        <div class="switch" >
+            <span id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined " style="display: none;">routine</span>
+            <span id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined " style="display: flex;margin-left: 2%;color:rgb(239, 239, 239);text-decoration: none;cursor:pointer;font-size: 30px;" > routine </span>
+        </div>
+    </div>
+
+
+    <div id=main style="margin-top: 60px;">        
+        
+        <div  class="portrait" >
+            <img id="moi_image" src="Photos/moi.jpg" />
+        </div>
+    
+        <div class="txt_img">
+            <header id="head" >
+
+            <div class="tcenter" >
+                    <span >Nawal Kishor Hazarika</span>
+            </div>
+            </header>
+             
+            <hr style="border: 2px solid #098650">
+            <hr style="border: 2px solid #047ab1">
+                
+            <p id="bio" class="para">
+                Hi! I am Nawal. I have completed Integrated M.Sc. in Mathematics from <a href ="http://www.tezu.ernet.in/" class="link"> Tezpur University</a>. Currently I am studying Commutative Algebra and basic Algebraic Geometry. I will be joining <a href ="https://cas.okstate.edu/department_of_mathematics/" class="link"> Oklahoma State University, Stillwater</a> on Fall 2024.
+            </p>
+        </div>
+</div> 
+
+<!-- <footer style="text-align: center;font-size: 10px;  margin-left: 40%;margin-right:40%" >  
+    <p id="drksw" href="javascript:void(0)" class="darkMode" onclick="darkm()" style="color:red;cursor:pointer;background:black;padding: 5px;;border-radius: 20px;">Change background</p>
+    <p id="ltsw" href="javascript:void(0)" class="darkMode" onclick="lightm()"  style="visibilty:hidden">Return to previous background</p>
+</footer> -->
+</body>
+</html>

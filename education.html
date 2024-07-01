@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+<style>
+    #bdy{
+            transition:  .5s;    
+            }
+    #mySidenav{
+            transition:  .5s;
+        }
+    #top{
+            transition:  .5s;
+        }        
+ 
+    #main{
+        transition: margin-left .5s;
+        transition: margin-right .5s;
+        }
+</style>
+
+
+<script src="script.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name = "description" content = "My Education">
+    <link rel="stylesheet" href="CSS/mainstyle.css">
+    <link rel="stylesheet" href="CSS/sidenav.css">
+    <link rel="stylesheet" href="CSS/education.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body id="bdy"  style="margin-left: 5%; margin-right: 5%;">
+    <div id="mySidenav" class="sidenav"> 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+        <img src="Photos/nkh_logo.png" alt="NKH">
+        <li>
+            <span class="material-symbols-outlined">home</span>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">book</span>
+            <a href="education.html">Education</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">calculate</span>
+            <a href="#">Research</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">book</span>
+            <a href="#">Notes</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">shuffle</span>
+            <a href="#">Miscellenous</a></li>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="contact.html">Contact</a> 
+        </li>
+        <li>
+            <span class="material-symbols-outlined">person</span>
+            <a href="Pdf/CV.pdf">CV</a> 
+        </li>
+    </div>
+
+        
+    <div id="top" style="margin-left: 10px;display:block;">
+        <span id="button" class="nav_button" onclick="openNav()">&#9776;</span>
+        <span  class="assamese_name"> নৱল কিশোৰ হাজৰিকা</span>
+
+        <div class="switch" >
+            <span id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined " style="display: none;">routine</span>
+            <span id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined " style="display: flex;margin-left: 2%;color:rgb(239, 239, 239);text-decoration: none;cursor:pointer;font-size: 30px;" > routine </span>
+        </div>
+    </div>
+    
+    <div id="main" class="education">
+        <h1 class="header"> Education</h1>
+        <div class="edu">
+            <img src="Photos/Emblems/Niketan logo.png" alt=""> 
+            <div class="details">
+                <a class="name">Sankardev Sishu Vidya Niketan, Narayanpur</a>
+                <a class="name">শংকৰদেৱ শিশু বিদ্যা নিকেতন, নাৰায়ণপুৰ </a>
+                <a>- Primary and Middle School</a>
+                <a>- 2005-2012</a>
+            </div>
+        </div>
+        <div class="edu">
+            <img src="Photos/Emblems/GJA logo.png" alt=""> 
+            <div class="details">
+                <a class="name"> Gyanjyoti Academy, Narayanpur </a>
+                <a class="name"> জ্ঞানজ্যোতি একাডেমী, নাৰায়ণপুৰ </a>
+                <a>- High School Leaving Certificate </a>
+                <a>- 2013-2016</a>
+            </div>
+        </div>    
+        <div class="edu">
+            <img src="Photos/Emblems/Cotton_University_logo.png" alt=""> 
+            <div class="details">
+                <a class="name"> Cotton College (University), Guwahati </a>
+                <a class="name"> কটন কলেজ (বিশ্ববিদ্যালয়), গুৱাহাটী</a>
+                <a>- Higher Secondary (10+2) </a>
+                <a>- Science </a>
+                <a>- 2016-2018</a>
+            </div>
+        </div>    
+        <div class="edu">
+            <img src="Photos/Emblems/Tezpur_University_logo.png" alt=""> 
+            <div class="details">
+                <a class="name"> Tezpur University, Napaam </a>
+                <a class="name"> তেজপুৰ বিশ্ববিদ্যালয়, নপাম </a>
+                <a>- Integrated M.Sc. in Mathematics </a>
+                <a>- 2018-2023</a>
+            </div>
+        </div>
+        <div class="edu">
+            <img  src="Photos/Emblems/okstate.png" alt=""> 
+            <div class="details">
+                <a class="name"> Oklahoma State University, Stillwater </a>
+                <a class="name"> ওকলাহোমা ষ্টেট ইউনিভাৰ্চিটি, ষ্টিলৱাটাৰ </a>
+                <a>- Ph.D. in Mathematics </a>
+                <a>- Since 2024</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
